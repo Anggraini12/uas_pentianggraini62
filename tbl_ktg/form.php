@@ -23,25 +23,18 @@
             <div class="card-body">
             <form action="proses.php" method="post" enctype="multipart/form-data">
                 <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Id Buku</label>
-                    <input type="text" name="id" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <label for="exampleInputEmail1" class="form-label">Id Kategori</label>
+                    <input type="text" name="id_ktg" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
                 </div>
                 <div class="mb-3">
-                    <label for="exampleInputPassword1" class="form-label">Judul Buku</label>
-                    <input type="text" name="judul_buku" class="form-control" id="exampleInputPassword1">
+                    <label for="exampleInputPassword1" class="form-label">Nama Kategori</label>
+                    <input type="text" name="nama_ktg" class="form-control" id="exampleInputPassword1">
                 </div>
                 <div class="mb-3">
-                    <label for="exampleInputPassword1" class="form-label">Penulis</label>
-                    <input type="text" name="penulis" class="form-control" id="exampleInputPassword1">
+                    <label for="exampleInputPassword1" class="form-label">Foto</label>
+                    <input type="file" accept="image/*" name="foto" class="form-control" id="exampleInputPassword1">
                 </div>
-                <div class="mb-3">
-                    <label for="exampleInputPassword1" class="form-label">Kategori Id</label>
-                    <input type="text" name="kategori_id" class="form-control" id="exampleInputPassword1">
-                </div>
-                <div class="mb-3">
-                    <label for="exampleInputPassword1" class="form-label">Cover Buku</label>
-                    <input type="text" name="cover_buku" class="form-control" id="exampleInputPassword1">
-                </div>
+
 
                 <button type="submit" class="btn btn-primary">Submit</button>
             </form>

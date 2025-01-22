@@ -25,11 +25,9 @@
                 <thead>
                     <tr>
                         <th scope="col">No</th>
-                        <th scope="col">id_buku</th>
-                        <th scope="col">Judul Buku</th>
-                        <th scope="col">Penulis</th>
-                        <th scope="col">Kategori</th>
-                        <th scope="col">Cover Buku</th>
+                        <th scope="col">Id Kategori</th>
+                        <th scope="col">Nama Kategori</th>
+
                     </tr>
                 </thead>
                 <tbody>
@@ -38,7 +36,7 @@
                     include("../koneksi.php");
 
                     #2. menulis query
-                    $tampil = "SELECT * FROM tabel_buku";
+                    $tampil = "SELECT * FROM tbl_ktg";
 
                     #3. jalankan query
                     $proses = mysqli_query($koneksi, $tampil);
@@ -49,20 +47,17 @@
                     ?>
                     <tr>
                         <th scope="row"><?=$nomor++?></th>
-                        <td><?=$data['id_buku']?></td>
-                        <td><?=$data['judul_buku']?></td>
-                        <td><?=$data['penulis']?></td>
-                        <td><?=$data['kategori_id']?></td>
-                        <td><?=$data['cover_buku']?></td>
+                        <td><?=$data['id_ktg']?></td>
+                        <td><?=$data['nama_ktg']?></td>
                         <td>
-                            <a class="btn btn-info btn-sm" href="edit.php?id=<?=$data['id_buku']?>"><i class="fa fa-pen-to-square"></i></a>
+                            <a class="btn btn-info btn-sm" href="edit.php?id=<?=$data['id_ktg']?>"><i class="fa fa-pen-to-square"></i></a>
 
-                            <button type="button" class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#hapus<?=$data['id_buku']?>">
+                            <button type="button" class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#hapus<?=$data['id_ktg']?>">
                             <i class="fa-solid fa-trash"></i>
                             </button>
 
                             <!-- Modal -->
-                            <div class="modal fade" id="hapus<?=$data['id_buku']?>" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal fade" id="hapus<?=$data['id_ktg']?>" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                             <div class="modal-dialog">
                                 <div class="modal-content">
                                 <div class="modal-header">
@@ -70,11 +65,11 @@
                                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
-                                    Yakin data <b><?=$data['judul_buku']?></b> ingin dihapus?
+                                    Yakin data <b><?=$data['nama_ktg']?></b> ingin dihapus?
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Batal</button>
-                                    <a href="hapus.php?xyz=<?=$data['id_buku']?>" class="btn btn-danger">Hapus</a>
+                                    <a href="hapus.php?xyz=<?=$data['id_ktg']?>" class="btn btn-danger">Hapus</a>
                                 </div>
                                 </div>
                             </div>

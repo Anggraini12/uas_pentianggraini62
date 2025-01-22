@@ -1,13 +1,10 @@
-<?php
-include_once("cek_login.php")
-?>
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projek IS-62</title>
+    <title>uas penti anggraini</title>
     <link rel="stylesheet" href="css/bootstrap.css">
 </head>
 <body>

@@ -13,7 +13,7 @@
           <a class="nav-link active" aria-current="page" href="/uas_pentianggraini62/tabel_buku/index.php">Tabel Buku</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="/uas_pentianggraini62/modul_jurusan/index.php">Tabel Kategori</a>
+          <a class="nav-link active" aria-current="page" href="/uas_pentianggraini62/tbl_ktg/index.php">Tabel Kategori</a>
         </li>
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="/uas_pentianggraini62/ubah_password.php">Ubah password</a>

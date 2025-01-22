@@ -34,24 +34,16 @@ $data = mysqli_fetch_array($edit)
         <div class="col-8 m-auto">
             <div class="card">
             <div class="card-header">
-                <h3 class="float-start">Form Edit Data Buku</h3>
+                <h3 class="float-start">Form Edit Data Kategori</h3>
 
             </div>
                 <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Judul Buku</label>
-                    <input type="text" value="<?=$data['judul_buku']?>" name="judul" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <label for="exampleInputEmail1" class="form-label">Id Kategori</label>
+                    <input type="text" value="<?=$data['id_ktg']?>" name="judul" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
                 </div>
                 <div class="mb-3">
-                    <label for="exampleInputPassword1" class="form-label">Penulis</label>
-                    <input type="text" value="<?=$data['penulis']?>" name="penulis" class="form-control" id="exampleInputPassword1">
-                </div>
-                <div class="mb-3">
-                    <label for="exampleInputPassword1" class="form-label">Kategori Id</label>
-                    <input type="text" value="<?=$data['kategori_id']?>" name="ktg" class="form-control" id="exampleInputPassword1">
-                </div>
-                <div class="mb-3">
-                    <label for="exampleInputPassword1" class="form-label">Cover Buku</label>
-                    <input type="text" value="<?=$data['cover_buku']?>" name="cover" class="form-control" id="exampleInputPassword1">
+                    <label for="exampleInputPassword1" class="form-label">Nama Kategori</label>
+                    <input type="text" value="<?=$data['nama_ktg']?>" name="penulis" class="form-control" id="exampleInputPassword1">
                 </div>
 
                 <button type="submit" class="btn btn-primary">Update</button>
